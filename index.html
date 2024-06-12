@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To-Do List</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+      <span>To-Do List</span>
+    </div>
+    <div class="nav-links">
+      <a href="#todo">To-Do List</a>
+      <a href="signin.html">Sign In</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<section id="todo">
+  <div class="container">
+    <h1>Your To-Do List</h1>
+    <p>Welcome to your To-Do List! Here you can:</p>
+    <ul>
+      <li>Add new tasks by typing them into the input field and clicking the "Add" button.</li>
+      <li>Mark tasks as completed by checking the checkbox next to each task.</li>
+      <li>Delete tasks by clicking the "Clear Completed" button.</li>
+    </ul>
+    <input type="text" id="taskInput" placeholder="Add a new task...">
+    <button onclick="addTask()">Add</button>
+
+    <ul id="taskList"></ul>
+
+    <button onclick="clearCompleted()">Clear Completed</button>
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
